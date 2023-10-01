@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" content="initial-scale=1">
+    <script src="https://kit.fontawesome.com/4165bff5b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@300;400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Online Store></title>
+</head>
+
+<body>
+    <div class="background-image">
+        <header class="header">
+            <nav>
+                <ul class="navigation">
+                    <li>
+                        <div class="logo">
+                            <a href="#" class="logo">AllureSkin & Hair Essentials</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#filters">Catalog</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                    <li>
+                        <a href="#contacts">Payment and Delivery</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="page-info" id="banner">
+            <section class="content-box">
+                <h1 class="content-title">Created to make you beautiful.</h1>
+                <p class="content-text">Welcome to AllureSkin & Hair Essentials - your source for beauty and well-being!
+                    We
+                    offer a wide range of professional hair and body care products crafted by leading cosmetic brands.
+                    Our
+                    products will help you achieve incredible beauty and maintain the health of your skin and hair.
+                    Unlock
+                    your full potential and experience true inspiration with AllureSkin & Hair Essentials. Allow
+                    yourself to
+                    be beautiful and healthy every day!</p>
+                <a class="button" href="#filters">Explore</a>
+            </section>
+        </div>
+    </div>
+    <main>
+
+        <section class="section">
+            <div class="wrapper">
+                <h2>Categories</h2>
+                <div class="container">
+                    <article class="menu-item">
+                        <a href="#filters"><img src="img/skin-care.jpg" alt="Косметика для ухода за кожей"></a>
+                    </article>
+                    <article class="menu-item">
+                        <a href="#filters"><img src="img/make-up.jpg" alt="Декоративная косметика"></a>
+                    </article>
+                    <article class="menu-item">
+                        <a href="#filters"><img src="img/hair.jpg" alt="Косметика для волос"></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="wrapper">
+                <h3>We always take care of your safety, beauty and health.</h3>
+                <img src="img/rituals.jpg" alt="Крем для тела">
+                <p class="wrapper-text">Our products are crafted by leading brands to enhance your beauty and maintain
+                    the health of your
+                    skin and hair. Explore our diverse catalog of hair, skin, and body care products.</p>
+            </div>
+        </section>
+        <div class="filters" id="filters">
+            <div class="filters-sort">
+                <label for="sort">Sorting:</label>
+                <select name="sort" id="sort">
+                    <option selected value="alphabet">Alphabetical (A to Z) </option>
+                    <option value="expensive">Price (High to Low)</option>
+                    <option value="cheap">Price (Low to High)</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+            <div class="site-search">
+                <input type="search" id="search-input">
+                <button type="button" id="search-btn" class="fa fa-search"></i>
+            </div>
+        </div>
+
+        <section id="shop-items">
+        </section>
+        <div class="wrapper-found">
+            <p id="nothing-found">Nothing found</p>
+        </div>
+    </main>
+    <footer id="contacts" class="container-contacts">
+        <div class="networks">
+            <a href="#" class="logo">AllureSkin & Hair Essentials</a>
+            <p class="paragraph">Daily from 10:00 AM to 9:00 PM</p>
+            <p class="paragraph">+1-234-56-78-912</p>
+        </div>
+        <div class="social-networks">
+            <a class="social-networks-link" href="https://web.telegram.org/a/"
+                aria-label="Перейти на страницу Telegram">
+                <i class="fa-brands fa-telegram"></i>
+            </a>
+            <a class="social-networks-link" href="https://www.whatsapp.com/?lang=ru"
+                aria-label="Перейти на страницу Twitter">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a class="social-networks-link" href="https://www.instagram.com" aria-label="Перейти на страницу Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <a class="scroll" href="#banner">
+            <i class="fa-solid fa-circle-arrow-up" aria-label="Кнопка вверх для прокрутки страницы"></i>
+        </a>
+    </footer>
+    <template id="item-template">
+        <div class="shop-item">
+            <img src="">
+            <div class="content">
+                <div class="tags"></div>
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="footer">
+                <span class="price"></span>
+                <div class="rating"><i class="fa-solid fa-star"></i></div>
+            </div>
+        </div>
+        </div>
+    </template>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
